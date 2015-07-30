@@ -8,6 +8,5 @@ Every *.cs file will then be opened by Visual Studio Code.
 If you double click on console errors, warnings oder other logs, your file will be opened at the specific line.
 
 To disable UniVSCode and use the app you've selected in your Unity settings, simply deactivate UniVSCode in the edit menu.
-![menu screenshot](https://raw.githubusercontent.com/robin7331/UniVSCode/master/readme/menu.png)
 
-Have fun!
+![menu screenshot](https://raw.githubusercontent.com/robin7331/UniVSCode/master/readme/menu.png)
