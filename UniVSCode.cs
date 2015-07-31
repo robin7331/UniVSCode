@@ -184,8 +184,8 @@ public class UniVSCode : MonoBehaviour
 
     static void WritePortToVSCodeConfig(int port)
     {
-        UnityEngine.Debug.Log("Current Debugging Port is " + port);
-        UnityEngine.Debug.Log("Writing Port to VSCode config...");
+        UnityEngine.Debug.Log("Current mono debugging port is " + port);
+        //  UnityEngine.Debug.Log("Writing Port to VSCode config...");
 
         string filepath = ProjectPath() + "/.settings/launch.json";
 
@@ -221,7 +221,7 @@ public class UniVSCode : MonoBehaviour
             File.WriteAllText(filename, N.ToString());
         }
 
-        UnityEngine.Debug.Log("Port is written to launch.json!");
+        //  UnityEngine.Debug.Log("Port is written to launch.json!");
 
     }
 
@@ -256,7 +256,7 @@ public class UniVSCode : MonoBehaviour
 
     static JSONNode SetUnityConfiguration(JSONNode N, JSONClass unityConfiguration)
     {
-        UnityEngine.Debug.Log("Updateing conf..." + N.ToString());
+        //  UnityEngine.Debug.Log("Updateing conf..." + N.ToString());
 
         if (N != null && N["configurations"] != null)
         {
@@ -264,10 +264,10 @@ public class UniVSCode : MonoBehaviour
             bool found = false;
             foreach (JSONNode conf in N["configurations"].AsArray)
             {
-                UnityEngine.Debug.Log(index + ": " + conf.ToString());
+                //  UnityEngine.Debug.Log(index + ": " + conf.ToString());
                 if (conf["name"].Value == "Unity")
                 {
-                    UnityEngine.Debug.Log("Found at index " + index);
+                    //  UnityEngine.Debug.Log("Found at index " + index);
                     found = true;
                     break;
                 }
