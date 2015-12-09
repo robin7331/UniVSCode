@@ -187,7 +187,7 @@ public class UniVSCode : MonoBehaviour
         UnityEngine.Debug.Log("Current mono debugging port is " + port);
         //  UnityEngine.Debug.Log("Writing Port to VSCode config...");
 
-        string filepath = ProjectPath() + "/.settings/launch.json";
+        string filepath = ProjectPath() + "/.vscode/launch.json";
 
         if (!File.Exists(filepath))
         {
